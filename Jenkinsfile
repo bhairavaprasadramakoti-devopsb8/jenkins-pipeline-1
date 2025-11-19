@@ -12,7 +12,7 @@ pipeline {
             steps {
                 script {
                     // define a variable
-                    def course = "k8s"
+                    def course = "devops"
 
                     // if condition
                     if (course == "k8s") {
