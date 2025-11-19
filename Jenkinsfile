@@ -4,10 +4,15 @@ pipeline {
         label 'java-slave'
     }
     stages {
-        stage ('hostname') {
+        stage ('hostname') { // added a stage
             steps {
                 sh 'hostname -i'
             }
+        }
+        stage('NewStage') { // added a new stage
+            steps {
+                echo "Welcome to pipelines" // simple echo command
+            }  
         }
     }
 }
