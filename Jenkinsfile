@@ -1,4 +1,7 @@
 pipeline {
+    agent {
+        label 'java-slave'
+    }
     stages {
         stage ('DeploytoDev') {
             steps {
