@@ -19,8 +19,9 @@ pipeline {
             steps {
                 timeout(time: 10, unit: 'SECONDS') {
                     input message: 'Approve deployment to production?', ok: 'Deploy'
-                }
-                echo "**** Deploying to prod environment ****"
+                    }
+                    echo "**** Deploying to prod environment ****"
+                    //sleep 60
             }
         }
     }
